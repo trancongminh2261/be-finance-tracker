@@ -1,0 +1,6 @@
+@MonaDotNetTemplate_HostAddress = http://localhost:5171
+
+GET {{MonaDotNetTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

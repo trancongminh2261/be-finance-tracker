@@ -1,0 +1,39 @@
+{
+  "Response": {
+    "NotFound": {
+      "Message": {
+        "vi": "Không tìm thấy dữ liệu của {0}",
+        "en": "No data found {0}"
+      },
+      "StatusCode": 404
+    },
+    "Success": {
+      "Message": {
+        "vi": "Thao tác thành công",
+        "en": "Successful"
+      },
+      "StatusCode": 200
+    },
+    "BadRequest": {
+      "Message": {
+        "vi": "Sai dữ liệu đầu vào ở trường {0}",
+        "en": "Wrong input data from {0}"
+      },
+      "StatusCode": 400
+    },
+    "Unauthenticaion": {
+      "Message": {
+        "vi": "Xác thực thất bại",
+        "en": "Unauthorized, time out login session"
+      },
+      "StatusCode": 400
+    },
+    "Duplicate": {
+      "Message": {
+        "vi": "Đối tượng đã tồn tại",
+        "en": "Already object"
+      },
+      "StatusCode":  400
+    }
+  }
+}
