@@ -31,8 +31,8 @@
     <Folder Include="Uploads\Excel\" />
     <Folder Include="Uploads\Image\" />
     <Folder Include="Uploads\Other\" />
-    <Folder Include="Uploads\Word\" />
     <Folder Include="Uploads\PDF\" />
+    <Folder Include="Uploads\Word\" />
   </ItemGroup>
 
   <ItemGroup>

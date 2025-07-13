@@ -6,11 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="GetRequests\" />
+    <ProjectReference Include="..\MonaDotNetTemplate.Extensions\MonaDotNetTemplate.Extensions.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MonaDotNetTemplate.Extensions\MonaDotNetTemplate.Extensions.csproj" />
+    <Folder Include="GetRequests\" />
   </ItemGroup>
 
 </Project>
