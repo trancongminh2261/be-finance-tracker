@@ -80,12 +80,8 @@ internal class Program
             app.UseCors(cor["Name"]);
         }
 
-        // Configure the HTTP request pipeline.
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseStaicFilesOnServer();
 
@@ -93,7 +89,7 @@ internal class Program
 
         app.UseMiddlewareContext();
 
-        app.UseHttpsRedirection();
+        //app.UseHttpsRedirection();
 
         app.UseAuthentication();
 

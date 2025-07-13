@@ -21,6 +21,6 @@ RUN mkdir -p /app/Template
 RUN mkdir -p /app/Template/Email
 
 COPY --from=build /publish .
-ENV ASPNETCORE_URLS=http://+:10000
-EXPOSE 10000
+ENV ASPNETCORE_URLS=http://+:8080
+EXPOSE 8080
 ENTRYPOINT ["dotnet", "MonaDotNetTemplate.API.dll"]
