@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 COPY . .
-RUN dotnet publish MonaDotNetTemplate.API/MonaDotNetTemplate.API.csproj -c Release -o /publish
+RUN dotnet publish FinanceTracker.API/FinanceTracker.API.csproj -c Release -o /publish
 
 # ----- Runtime Stage -----
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
@@ -23,4 +23,4 @@ RUN mkdir -p /app/Template/Email
 COPY --from=build /publish .
 ENV ASPNETCORE_URLS=http://+:8080
 EXPOSE 8080
-ENTRYPOINT ["dotnet", "MonaDotNetTemplate.API.dll"]
+ENTRYPOINT ["dotnet", "FinanceTracker.API.dll"]
