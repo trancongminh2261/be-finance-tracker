@@ -361,7 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/MonaFood/MonaFood.API/appsettings.json
 
 /MonaFood/MonaFood.API/bin/
 /MonaFood/MonaFood.API/obj/
