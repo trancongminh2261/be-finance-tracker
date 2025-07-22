@@ -40,7 +40,7 @@ namespace FinanceTracker.API.Controllers
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public virtual async Task<AppDataDomainResult> RegisterAsync([FromForm] RegisterPostRequest  registserRequest)
+        public virtual async Task<AppDataDomainResult> RegisterAsync([FromBody] RegisterPostRequest  registserRequest)
         {
             if (!ModelState.IsValid)
                 throw new ArgumentException();
